@@ -1,0 +1,619 @@
+@prefix : <http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita> .
+
+<http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita> rdf:type owl:Ontology ;
+                                                                       owl:versionIRI <http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita/1.0> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#alignsWithEthicalFramework
+:alignsWithEthicalFramework rdf:type owl:ObjectProperty ;
+                            rdfs:domain [ rdf:type owl:Restriction ;
+                                          owl:onProperty owl:topObjectProperty ;
+                                          owl:someValuesFrom :Verse
+                                        ] ;
+                            rdfs:range [ rdf:type owl:Restriction ;
+                                         owl:onProperty owl:topObjectProperty ;
+                                         owl:someValuesFrom :EthicalFramework
+                                       ] .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#evokesEmotion
+:evokesEmotion rdf:type owl:ObjectProperty ;
+               rdfs:domain [ rdf:type owl:Restriction ;
+                             owl:onProperty owl:topObjectProperty ;
+                             owl:someValuesFrom :Verse
+                           ] ;
+               rdfs:range [ rdf:type owl:Restriction ;
+                            owl:onProperty owl:topObjectProperty ;
+                            owl:someValuesFrom :Emotion
+                          ] .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#hasPhilosophicalReference
+:hasPhilosophicalReference rdf:type owl:ObjectProperty ;
+                           rdfs:domain [ rdf:type owl:Restriction ;
+                                         owl:onProperty owl:topObjectProperty ;
+                                         owl:someValuesFrom :Verse
+                                       ] ;
+                           rdfs:range [ rdf:type owl:Restriction ;
+                                        owl:onProperty owl:topObjectProperty ;
+                                        owl:someValuesFrom :PhilosophicalConcept
+                                      ] .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#hasReferenceCommentary
+:hasReferenceCommentary rdf:type owl:ObjectProperty ;
+                        rdfs:domain [ rdf:type owl:Restriction ;
+                                      owl:onProperty owl:topObjectProperty ;
+                                      owl:someValuesFrom :Verse
+                                    ] ;
+                        rdfs:range [ rdf:type owl:Restriction ;
+                                     owl:onProperty owl:topObjectProperty ;
+                                     owl:someValuesFrom :Source
+                                   ] .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#hasSourceTranslator
+:hasSourceTranslator rdf:type owl:ObjectProperty ;
+                     rdfs:domain [ rdf:type owl:Restriction ;
+                                   owl:onProperty owl:topObjectProperty ;
+                                   owl:someValuesFrom :Verse
+                                 ] ;
+                     rdfs:range [ rdf:type owl:Restriction ;
+                                  owl:onProperty owl:topObjectProperty ;
+                                  owl:someValuesFrom :Translator
+                                ] .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#hasSubtheme
+:hasSubtheme rdf:type owl:ObjectProperty ,
+                      owl:ReflexiveProperty ;
+             rdfs:domain [ rdf:type owl:Restriction ;
+                           owl:onProperty owl:topObjectProperty ;
+                           owl:someValuesFrom :Verse
+                         ] ;
+             rdfs:range [ rdf:type owl:Restriction ;
+                          owl:onProperty owl:topObjectProperty ;
+                          owl:someValuesFrom :Theme
+                        ] .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#hasTag
+:hasTag rdf:type owl:ObjectProperty ;
+        rdfs:domain [ rdf:type owl:Restriction ;
+                      owl:onProperty owl:topObjectProperty ;
+                      owl:someValuesFrom :Verse
+                    ] ;
+        rdfs:range [ rdf:type owl:Restriction ;
+                     owl:onProperty owl:topObjectProperty ;
+                     owl:someValuesFrom :Tag
+                   ] .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#hasTheme
+:hasTheme rdf:type owl:ObjectProperty ;
+          rdfs:domain [ rdf:type owl:Restriction ;
+                        owl:onProperty owl:topObjectProperty ;
+                        owl:someValuesFrom :Verse
+                      ] ;
+          rdfs:range [ rdf:type owl:Restriction ;
+                       owl:onProperty owl:topObjectProperty ;
+                       owl:someValuesFrom :Theme
+                     ] .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#hasemotion
+:hasemotion rdf:type owl:ObjectProperty ;
+            rdfs:comment "wrong entity" ;
+            rdfs:seeAlso :hasSubtheme ;
+            owl:deprecated "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#isListenedBy
+:isListenedBy rdf:type owl:ObjectProperty ;
+              rdfs:domain [ rdf:type owl:Restriction ;
+                            owl:onProperty owl:topObjectProperty ;
+                            owl:someValuesFrom :Verse
+                          ] ;
+              rdfs:range [ rdf:type owl:Restriction ;
+                           owl:onProperty owl:topObjectProperty ;
+                           owl:someValuesFrom :SentientBeing
+                         ] .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#isSpokenBy
+:isSpokenBy rdf:type owl:ObjectProperty ;
+            rdfs:domain [ rdf:type owl:Restriction ;
+                          owl:onProperty owl:topObjectProperty ;
+                          owl:someValuesFrom :Verse
+                        ] ;
+            rdfs:range [ rdf:type owl:Restriction ;
+                         owl:onProperty owl:topObjectProperty ;
+                         owl:someValuesFrom :SentientBeing
+                       ] .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#hasCertaintyScore
+:hasCertaintyScore rdf:type owl:DatatypeProperty ;
+                   rdfs:domain [ rdf:type owl:Restriction ;
+                                 owl:onProperty owl:topObjectProperty ;
+                                 owl:someValuesFrom :Emotion
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty owl:topObjectProperty ;
+                                 owl:someValuesFrom :EthicalFramework
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty owl:topObjectProperty ;
+                                 owl:someValuesFrom :Verse
+                               ] ;
+                   rdfs:range xsd:double .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#hasChapterNumber
+:hasChapterNumber rdf:type owl:DatatypeProperty ;
+                  rdfs:domain [ rdf:type owl:Restriction ;
+                                owl:onProperty owl:topObjectProperty ;
+                                owl:someValuesFrom :Verse
+                              ] ;
+                  rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#hasDialogueContext
+:hasDialogueContext rdf:type owl:DatatypeProperty ;
+                    rdfs:domain [ rdf:type owl:Restriction ;
+                                  owl:onProperty owl:topObjectProperty ;
+                                  owl:someValuesFrom :Verse
+                                ] ;
+                    rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#hasEmotionIntensity
+:hasEmotionIntensity rdf:type owl:DatatypeProperty ;
+                     rdfs:domain [ rdf:type owl:Restriction ;
+                                   owl:onProperty owl:topObjectProperty ;
+                                   owl:someValuesFrom :Emotion
+                                 ] ;
+                     rdfs:range xsd:double .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#hasEnglishTranslation
+:hasEnglishTranslation rdf:type owl:DatatypeProperty ;
+                       rdfs:domain [ rdf:type owl:Restriction ;
+                                     owl:onProperty owl:topObjectProperty ;
+                                     owl:someValuesFrom :Verse
+                                   ] ;
+                       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#hasInterpretationNote
+:hasInterpretationNote rdf:type owl:DatatypeProperty ;
+                       rdfs:domain [ rdf:type owl:Restriction ;
+                                     owl:onProperty owl:topObjectProperty ;
+                                     owl:someValuesFrom :Verse
+                                   ] ;
+                       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#hasRealWorldExampleEnglish
+:hasRealWorldExampleEnglish rdf:type owl:DatatypeProperty ;
+                            rdfs:domain [ rdf:type owl:Restriction ;
+                                          owl:onProperty owl:topObjectProperty ;
+                                          owl:someValuesFrom :RealWorldExample
+                                        ] ;
+                            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#hasRealWorldExampleTamil
+:hasRealWorldExampleTamil rdf:type owl:DatatypeProperty ;
+                          rdfs:domain [ rdf:type owl:Restriction ;
+                                        owl:onProperty owl:topObjectProperty ;
+                                        owl:someValuesFrom :RealWorldExample
+                                      ] ;
+                          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#hasReferenceURL
+:hasReferenceURL rdf:type owl:DatatypeProperty ;
+                 rdfs:domain [ rdf:type owl:Restriction ;
+                               owl:onProperty owl:topObjectProperty ;
+                               owl:someValuesFrom :Verse
+                             ] ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#hasSanskritVerseText
+:hasSanskritVerseText rdf:type owl:DatatypeProperty ;
+                      rdfs:domain [ rdf:type owl:Restriction ;
+                                    owl:onProperty owl:topObjectProperty ;
+                                    owl:someValuesFrom :Verse
+                                  ] ;
+                      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#hasTamilTranslation
+:hasTamilTranslation rdf:type owl:DatatypeProperty ;
+                     rdfs:domain [ rdf:type owl:Restriction ;
+                                   owl:onProperty owl:topObjectProperty ;
+                                   owl:someValuesFrom :Verse
+                                 ] ;
+                     rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#hasVerseId
+:hasVerseId rdf:type owl:DatatypeProperty ;
+            rdfs:domain [ rdf:type owl:Restriction ;
+                          owl:onProperty owl:topObjectProperty ;
+                          owl:someValuesFrom :Verse
+                        ] ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#hasVerseNumber
+:hasVerseNumber rdf:type owl:DatatypeProperty ;
+                rdfs:domain [ rdf:type owl:Restriction ;
+                              owl:onProperty owl:topObjectProperty ;
+                              owl:someValuesFrom :Verse
+                            ] ;
+                rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#hasVerseType
+:hasVerseType rdf:type owl:DatatypeProperty ;
+              rdfs:domain [ rdf:type owl:Restriction ;
+                            owl:onProperty owl:topObjectProperty ;
+                            owl:someValuesFrom :Verse
+                          ] ;
+              rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#AbstractConcept
+:AbstractConcept rdf:type owl:Class ;
+                 rdfs:subClassOf :GitaEntity .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Amusement
+:Amusement rdf:type owl:Class ;
+           rdfs:subClassOf :PositiveEmotion .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Anxiety
+:Anxiety rdf:type owl:Class ;
+         rdfs:subClassOf :NegativeEmotion .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Arjuna
+:Arjuna rdf:type owl:Class ;
+        rdfs:subClassOf :KuruDynastyMember .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Army
+:Army rdf:type owl:Class ;
+      rdfs:subClassOf :Translator .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Avatar
+:Avatar rdf:type owl:Class ;
+        rdfs:subClassOf :Deity .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#BattleFormation
+:BattleFormation rdf:type owl:Class ;
+                 rdfs:subClassOf :WarEvent .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#BhaktiYoga
+:BhaktiYoga rdf:type owl:Class ;
+            rdfs:subClassOf :PathToLiberation .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Bhima
+:Bhima rdf:type owl:Class ;
+       rdfs:subClassOf :KuruDynastyMember .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Bhisma
+:Bhisma rdf:type owl:Class ;
+        rdfs:subClassOf :KuruDynastyMember .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Confidence
+:Confidence rdf:type owl:Class ;
+            rdfs:subClassOf :PositiveEmotion .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Confusion
+:Confusion rdf:type owl:Class ;
+           rdfs:subClassOf :NegativeEmotion .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Consequentialism
+:Consequentialism rdf:type owl:Class ;
+                  rdfs:subClassOf :EthicalFramework .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Coreprinciple
+:Coreprinciple rdf:type owl:Class ;
+               rdfs:subClassOf :PhilosophicalConcept .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#DeclarationOfWar
+:DeclarationOfWar rdf:type owl:Class ;
+                  rdfs:subClassOf :WarEvent .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Deity
+:Deity rdf:type owl:Class ;
+       rdfs:subClassOf :SentientBeing .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Determination
+:Determination rdf:type owl:Class ;
+               rdfs:subClassOf :PositiveEmotion .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Dharma
+:Dharma rdf:type owl:Class ;
+        rdfs:subClassOf :Coreprinciple .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Dhritarashtra
+:Dhritarashtra rdf:type owl:Class ;
+               rdfs:subClassOf :KuruDynastyMember .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Dialogue
+:Dialogue rdf:type owl:Class ;
+          rdfs:subClassOf :NarrativeElement .
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Diplomacy
+:Diplomacy rdf:type owl:Class ;
+           rdfs:subClassOf :Theme .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Doubt
+:Doubt rdf:type owl:Class ;
+       rdfs:subClassOf :NegativeEmotion .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Dronacharya
+:Dronacharya rdf:type owl:Class ;
+             rdfs:subClassOf :KuruDynastyMember .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Duryodhana
+:Duryodhana rdf:type owl:Class ;
+            rdfs:subClassOf :KuruDynastyMember .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Duty
+:Duty rdf:type owl:Class ;
+      rdfs:subClassOf :Theme .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Emotion
+:Emotion rdf:type owl:Class ;
+         rdfs:subClassOf :AbstractConcept .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#EthicalFramework
+:EthicalFramework rdf:type owl:Class ;
+                  rdfs:subClassOf :AbstractConcept .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#FamilyConflict
+:FamilyConflict rdf:type owl:Class ;
+                rdfs:subClassOf :Theme .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Fear
+:Fear rdf:type owl:Class ;
+      rdfs:subClassOf :NegativeEmotion .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#GitaEntity
+:GitaEntity rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Group
+:Group rdf:type owl:Class ;
+       rdfs:subClassOf :GitaEntity .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Human
+:Human rdf:type owl:Class ;
+       rdfs:subClassOf :SentientBeing .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#JnanaYoga
+:JnanaYoga rdf:type owl:Class ;
+           rdfs:subClassOf :PathToLiberation .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Joy
+:Joy rdf:type owl:Class ;
+     rdfs:subClassOf :PositiveEmotion .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Karma
+:Karma rdf:type owl:Class ;
+       rdfs:subClassOf :Coreprinciple .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#KarmaYoga
+:KarmaYoga rdf:type owl:Class ;
+           rdfs:subClassOf :PathToLiberation .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#KauravaArmy
+:KauravaArmy rdf:type owl:Class ;
+             rdfs:subClassOf :Army .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Krishna
+:Krishna rdf:type owl:Class ;
+         rdfs:subClassOf :Avatar .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#KuruDynasty
+:KuruDynasty rdf:type owl:Class ;
+             rdfs:subClassOf :Lineage .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#KuruDynastyMember
+:KuruDynastyMember rdf:type owl:Class ;
+                   rdfs:subClassOf :Human .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Lineage
+:Lineage rdf:type owl:Class ;
+         rdfs:subClassOf :Group .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Loyalty
+:Loyalty rdf:type owl:Class ;
+         rdfs:subClassOf :Theme .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#MilitaryStrength
+:MilitaryStrength rdf:type owl:Class ;
+                  rdfs:subClassOf :Theme .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#NarrativeElement
+:NarrativeElement rdf:type owl:Class ;
+                  rdfs:subClassOf :GitaEntity .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#NegativeEmotion
+:NegativeEmotion rdf:type owl:Class ;
+                 rdfs:subClassOf :Emotion .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#PandavaArmy
+:PandavaArmy rdf:type owl:Class ;
+             rdfs:subClassOf :Army .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#PathToLiberation
+:PathToLiberation rdf:type owl:Class ;
+                  rdfs:subClassOf :PhilosophicalConcept .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#PhilosophicalConcept
+:PhilosophicalConcept rdf:type owl:Class ;
+                      rdfs:subClassOf :AbstractConcept .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#PoliticalEthics
+:PoliticalEthics rdf:type owl:Class ;
+                 rdfs:subClassOf :EthicalFramework .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#PositiveEmotion
+:PositiveEmotion rdf:type owl:Class ;
+                 rdfs:subClassOf :Emotion .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Psychology
+:Psychology rdf:type owl:Class ;
+            rdfs:subClassOf :Theme .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#RealWorldExample
+:RealWorldExample rdf:type owl:Class ;
+                  rdfs:subClassOf :AbstractConcept .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Sanjaya
+:Sanjaya rdf:type owl:Class ;
+         rdfs:subClassOf :KuruDynastyMember .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#SentientBeing
+:SentientBeing rdf:type owl:Class ;
+               rdfs:subClassOf :GitaEntity .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Sorrow
+:Sorrow rdf:type owl:Class ;
+        rdfs:subClassOf :NegativeEmotion .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Source
+:Source rdf:type owl:Class ;
+        rdfs:subClassOf :GitaEntity .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Svadharma
+:Svadharma rdf:type owl:Class ;
+           rdfs:subClassOf :Coreprinciple .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Tag
+:Tag rdf:type owl:Class ;
+     rdfs:subClassOf :AbstractConcept .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Theme
+:Theme rdf:type owl:Class ;
+       rdfs:subClassOf :AbstractConcept .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Translator
+:Translator rdf:type owl:Class ;
+            rdfs:subClassOf :Source .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Unity
+:Unity rdf:type owl:Class ;
+       rdfs:subClassOf :Theme .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Verse
+:Verse rdf:type owl:Class ;
+       rdfs:subClassOf :Dialogue .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#Vikarma
+:Vikarma rdf:type owl:Class ;
+         rdfs:subClassOf :Coreprinciple .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#VirtueEthics
+:VirtueEthics rdf:type owl:Class ;
+              rdfs:subClassOf :EthicalFramework .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#VrishniDynasty
+:VrishniDynasty rdf:type owl:Class ;
+                rdfs:subClassOf :Lineage .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#War
+:War rdf:type owl:Class ;
+     rdfs:subClassOf :Theme .
+
+
+###  http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita#WarEvent
+:WarEvent rdf:type owl:Class ;
+          rdfs:subClassOf :NarrativeElement .
+
+
+###  Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi

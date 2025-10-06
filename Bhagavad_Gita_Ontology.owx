@@ -1,0 +1,887 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita"
+     versionIRI="http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita/1.0">
+    <Prefix name="" IRI="http://www.semanticweb.org/varshini/ontologies/2025/8/Bhagavad_Gita/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AbstractConcept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Amusement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Anxiety"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Arjuna"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Army"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Avatar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BattleFormation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BhaktiYoga"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bhima"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bhisma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Confidence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Confusion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Consequentialism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coreprinciple"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeclarationOfWar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Deity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Determination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dharma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dhritarashtra"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dialogue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diplomacy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Doubt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dronacharya"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Duryodhana"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Duty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Emotion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EthicalFramework"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FamilyConflict"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fear"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GitaEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Group"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Human"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JnanaYoga"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Joy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Karma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KarmaYoga"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KauravaArmy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Krishna"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KuruDynasty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KuruDynastyMember"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lineage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Loyalty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MilitaryStrength"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NarrativeElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NegativeEmotion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PandavaArmy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PathToLiberation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhilosophicalConcept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PoliticalEthics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PositiveEmotion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Psychology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RealWorldExample"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sanjaya"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SentientBeing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sorrow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Source"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Svadharma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tag"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Theme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Translator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Verse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vikarma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VirtueEthics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VrishniDynasty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#War"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WarEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#alignsWithEthicalFramework"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#evokesEmotion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPhilosophicalReference"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasReferenceCommentary"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSourceTranslator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubtheme"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTag"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTheme"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasemotion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isListenedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSpokenBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCertaintyScore"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasChapterNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDialogueContext"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEmotionIntensity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEnglishTranslation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasInterpretationNote"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRealWorldExampleEnglish"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRealWorldExampleTamil"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasReferenceURL"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSanskritVerseText"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTamilTranslation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasVerseId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasVerseNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasVerseType"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AbstractConcept"/>
+        <Class IRI="#GitaEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amusement"/>
+        <Class IRI="#PositiveEmotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Anxiety"/>
+        <Class IRI="#NegativeEmotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Arjuna"/>
+        <Class IRI="#KuruDynastyMember"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Army"/>
+        <Class IRI="#Translator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Avatar"/>
+        <Class IRI="#Deity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BattleFormation"/>
+        <Class IRI="#WarEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BhaktiYoga"/>
+        <Class IRI="#PathToLiberation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bhima"/>
+        <Class IRI="#KuruDynastyMember"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bhisma"/>
+        <Class IRI="#KuruDynastyMember"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Confidence"/>
+        <Class IRI="#PositiveEmotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Confusion"/>
+        <Class IRI="#NegativeEmotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Consequentialism"/>
+        <Class IRI="#EthicalFramework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coreprinciple"/>
+        <Class IRI="#PhilosophicalConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeclarationOfWar"/>
+        <Class IRI="#WarEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Deity"/>
+        <Class IRI="#SentientBeing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Determination"/>
+        <Class IRI="#PositiveEmotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dharma"/>
+        <Class IRI="#Coreprinciple"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dhritarashtra"/>
+        <Class IRI="#KuruDynastyMember"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dialogue"/>
+        <Class IRI="#NarrativeElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diplomacy"/>
+        <Class IRI="#Theme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Doubt"/>
+        <Class IRI="#NegativeEmotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dronacharya"/>
+        <Class IRI="#KuruDynastyMember"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Duryodhana"/>
+        <Class IRI="#KuruDynastyMember"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Duty"/>
+        <Class IRI="#Theme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Emotion"/>
+        <Class IRI="#AbstractConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EthicalFramework"/>
+        <Class IRI="#AbstractConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FamilyConflict"/>
+        <Class IRI="#Theme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fear"/>
+        <Class IRI="#NegativeEmotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Group"/>
+        <Class IRI="#GitaEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human"/>
+        <Class IRI="#SentientBeing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JnanaYoga"/>
+        <Class IRI="#PathToLiberation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Joy"/>
+        <Class IRI="#PositiveEmotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Karma"/>
+        <Class IRI="#Coreprinciple"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KarmaYoga"/>
+        <Class IRI="#PathToLiberation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KauravaArmy"/>
+        <Class IRI="#Army"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Krishna"/>
+        <Class IRI="#Avatar"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KuruDynasty"/>
+        <Class IRI="#Lineage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KuruDynastyMember"/>
+        <Class IRI="#Human"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lineage"/>
+        <Class IRI="#Group"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Loyalty"/>
+        <Class IRI="#Theme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MilitaryStrength"/>
+        <Class IRI="#Theme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NarrativeElement"/>
+        <Class IRI="#GitaEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NegativeEmotion"/>
+        <Class IRI="#Emotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PandavaArmy"/>
+        <Class IRI="#Army"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PathToLiberation"/>
+        <Class IRI="#PhilosophicalConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhilosophicalConcept"/>
+        <Class IRI="#AbstractConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PoliticalEthics"/>
+        <Class IRI="#EthicalFramework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PositiveEmotion"/>
+        <Class IRI="#Emotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Psychology"/>
+        <Class IRI="#Theme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RealWorldExample"/>
+        <Class IRI="#AbstractConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sanjaya"/>
+        <Class IRI="#KuruDynastyMember"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SentientBeing"/>
+        <Class IRI="#GitaEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sorrow"/>
+        <Class IRI="#NegativeEmotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Source"/>
+        <Class IRI="#GitaEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Svadharma"/>
+        <Class IRI="#Coreprinciple"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tag"/>
+        <Class IRI="#AbstractConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Theme"/>
+        <Class IRI="#AbstractConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Translator"/>
+        <Class IRI="#Source"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unity"/>
+        <Class IRI="#Theme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Verse"/>
+        <Class IRI="#Dialogue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vikarma"/>
+        <Class IRI="#Coreprinciple"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirtueEthics"/>
+        <Class IRI="#EthicalFramework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VrishniDynasty"/>
+        <Class IRI="#Lineage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#War"/>
+        <Class IRI="#Theme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WarEvent"/>
+        <Class IRI="#NarrativeElement"/>
+    </SubClassOf>
+    <ReflexiveObjectProperty>
+        <ObjectProperty IRI="#hasSubtheme"/>
+    </ReflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#alignsWithEthicalFramework"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Verse"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#evokesEmotion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Verse"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPhilosophicalReference"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Verse"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasReferenceCommentary"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Verse"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSourceTranslator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Verse"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSubtheme"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Verse"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTag"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Verse"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTheme"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Verse"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isListenedBy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Verse"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSpokenBy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Verse"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#alignsWithEthicalFramework"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#EthicalFramework"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#evokesEmotion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Emotion"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPhilosophicalReference"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#PhilosophicalConcept"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasReferenceCommentary"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Source"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSourceTranslator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Translator"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubtheme"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Theme"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTag"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Tag"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTheme"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Theme"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isListenedBy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#SentientBeing"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSpokenBy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#SentientBeing"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCertaintyScore"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Emotion"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCertaintyScore"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#EthicalFramework"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCertaintyScore"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Verse"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasChapterNumber"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Verse"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDialogueContext"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Verse"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasEmotionIntensity"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Emotion"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasEnglishTranslation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Verse"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasInterpretationNote"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Verse"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasRealWorldExampleEnglish"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#RealWorldExample"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasRealWorldExampleTamil"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#RealWorldExample"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasReferenceURL"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Verse"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSanskritVerseText"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Verse"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTamilTranslation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Verse"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasVerseId"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Verse"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasVerseNumber"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Verse"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasVerseType"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Verse"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCertaintyScore"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasChapterNumber"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDialogueContext"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasEmotionIntensity"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasEnglishTranslation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasInterpretationNote"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRealWorldExampleEnglish"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRealWorldExampleTamil"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasReferenceURL"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSanskritVerseText"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTamilTranslation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasVerseId"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasVerseNumber"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasVerseType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasemotion</IRI>
+        <Literal>wrong entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#hasemotion</IRI>
+        <IRI>#hasSubtheme</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
+        <IRI>#hasemotion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
