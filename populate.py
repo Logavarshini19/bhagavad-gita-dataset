@@ -14,7 +14,7 @@ g.bind("owl", OWL)
 g.bind("rdf", RDF)
 
 # Ensure the correct file name and format are used for loading the SCHEMA
-SCHEMA_FILE = "Bhagavad_Gita_Ontology.ttl"
+SCHEMA_FILE = "Bhagavad_Gita.ttl"
 
 try:
     # We use g.parse() for loading schemas (even if empty)
@@ -124,7 +124,7 @@ for verse in data:
         g.add((verse_uri, BG.hasReferenceCommentary, create_uri(commentary_name)))
 
 # --- 6. Save the Populated Ontology ---
-OUTPUT_FILE = "bhagavad-gita-populated.ttl"
+OUTPUT_FILE = "bhagavad-gita-populated-final.ttl"
 g.serialize(destination=OUTPUT_FILE, format="turtle")
 
 print("\n--- POPULATION COMPLETE ---")
